@@ -371,15 +371,22 @@ padding-bottom: 120px;
     align-items: center;
 }
 
+.customers-link:hover,
+.customers-link:focus {
+    border-color: var(--pressed-state-color);
+}
+
+
 .customers-logo {
     width: 104px;
     height: 56px;
+    fill: var(--color-subtle-text);
 }
 
-.customers-logo:hover {
-  background-color: var(--pressed-state-color);
+.customers-logo:hover,
+.customers-logo:focus {
+    fill: var(--pressed-state-color)
 }
-
 
 /*--------------CUSTOMERS------------*/
 
@@ -454,7 +461,10 @@ background-color: #31D0AA;
 
 /* ------------PORTFOLIO------------*/
 
-
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 112px;
+}
 
 .line-button {
   display: flex;
@@ -485,9 +495,6 @@ background-color: #31D0AA;
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.container-produkt {
-  padding-bottom: 120px;
-}
 
 .produkt {
   display: flex;
@@ -495,7 +502,11 @@ background-color: #31D0AA;
   gap: 48px 24px;
 }
 
-.link-card:hover
+.hover-link {
+  display: block;
+}
+
+.hover-link:hover
  {
     border-color: var(--light-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
